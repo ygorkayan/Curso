@@ -11,6 +11,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 @Table(name = "tb_order")
@@ -23,6 +25,7 @@ public class Order implements Serializable {
     private Long id;
     private Instant moment;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "client_id")
     private User client;
