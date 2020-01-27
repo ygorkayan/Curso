@@ -2,7 +2,6 @@ package com.yk.curso.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
