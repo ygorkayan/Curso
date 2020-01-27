@@ -71,7 +71,7 @@ public class Order implements Serializable {
     public void setOrderStatus(OrderStatus orderStatus) {
         if (orderStatus != null) {
             this.orderStatus = orderStatus.getCode();
-        }  
+        }
     }
 
     public OrderStatus getOrderStatus() {

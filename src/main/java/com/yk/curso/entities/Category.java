@@ -27,7 +27,6 @@ public class Category implements Serializable {
 
     @Transient
     private Set<Product> products = new HashSet<>();
-    
 
     public Category() {
     }
@@ -82,5 +81,4 @@ public class Category implements Serializable {
         return true;
     }
 
-    
 }
