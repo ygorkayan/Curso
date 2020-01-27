@@ -1,7 +1,5 @@
 package com.yk.curso.entities.enums;
 
-import com.yk.curso.entities.Order;
-
 /**
  * OrderStatus
  */
