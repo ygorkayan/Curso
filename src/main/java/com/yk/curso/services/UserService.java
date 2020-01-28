@@ -3,6 +3,8 @@ package com.yk.curso.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.persistence.EntityNotFoundException;
+
 import com.yk.curso.entities.User;
 import com.yk.curso.repositories.UserRepository;
 import com.yk.curso.services.exceptions.DatabaseException;
@@ -44,9 +46,14 @@ public class UserService {
     }
 
     public User update(Long id, User obj) {
-        User entity = repository.getOne(id);
-        updateData(entity, obj);
-        return repository.save(entity);
+        try {
+            User entity = repository.getOne(id);
+            updateData(entity, obj);
+            return repository.save(entity);
+        } catch (EntityNotFoundException ex) {
+            throw new ResourceNotFoundException(id);
+        }
+        
     }
 
     private void updateData(User entity, User obj) {
