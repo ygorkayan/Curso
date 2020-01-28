@@ -5,9 +5,12 @@ import java.util.Optional;
 
 import com.yk.curso.entities.User;
 import com.yk.curso.repositories.UserRepository;
+import com.yk.curso.services.exceptions.DatabaseException;
 import com.yk.curso.services.exceptions.ResourceNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -30,7 +33,14 @@ public class UserService {
     }
 
     public void delete(Long id) {
-        repository.deleteById(id);
+        try {
+            repository.deleteById(id);
+        } catch(EmptyResultDataAccessException ex) {
+            throw new ResourceNotFoundException(id);
+        } catch (DataIntegrityViolationException ex) {
+            throw new DatabaseException(ex.getMessage());
+        }
+
     }
 
     public User update(Long id, User obj) {
