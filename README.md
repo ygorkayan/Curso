@@ -1,5 +1,5 @@
 # Curso
-<p>Nesse projeto faço uso do Spring boot, db H2 e Postman</p>
+<p>Nesse projeto faço uso do Spring boot, db H2,Postman, PostgreSql e Heroku</p>
 <p>E esta sendo feito somente como forma didatica</p>
 
 # Link para heroku
