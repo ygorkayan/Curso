@@ -11,9 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-/**
- * ResourceExceptionHandler
- */
 @ControllerAdvice
 public class ResourceExceptionHandler {
 
@@ -21,8 +18,9 @@ public class ResourceExceptionHandler {
     public ResponseEntity<StandardError> resourceNotFound(ResourceNotFoundException e, HttpServletRequest request) {
         String error = "Recruso nao encontrado";
         HttpStatus status = HttpStatus.NOT_FOUND;
-        StandardError err = new StandardError(Instant.now(), status.value(), error, e.getMessage(), request.getRequestURI());
+        StandardError err = new StandardError(Instant.now(), status.value(), error, e.getMessage(),
+                request.getRequestURI());
         return ResponseEntity.status(status).body(err);
     }
-    
+
 }

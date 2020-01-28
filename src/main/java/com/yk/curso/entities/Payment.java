@@ -13,7 +13,6 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-
 @Entity
 @Table(name = "tb_payment")
 public class Payment implements Serializable {
@@ -89,6 +88,4 @@ public class Payment implements Serializable {
         return true;
     }
 
-    
-    
 }

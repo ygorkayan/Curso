@@ -13,9 +13,6 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-/**
- * Category
- */
 @Entity
 @Table(name = "tb_category")
 public class Category implements Serializable {
