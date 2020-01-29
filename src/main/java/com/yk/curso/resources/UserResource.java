@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
-@RequestMapping(value = "/users")
+@RequestMapping(value = "/usuario")
 public class UserResource {
 
     @Autowired
