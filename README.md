@@ -1,8 +1,11 @@
-# Curso
-<p>Nesse projeto faço uso do Spring boot, db H2,Postman, PostgreSql e Heroku</p>
-<p>E esta sendo feito somente como forma didatica</p>
+# Resumo
+<p>Nesse projeto faço uso do Spring boot, H2 Database, PostgreSql e Heroku<br>
+E está sendo feito somente como forma didática,<br>
+por ser uma API, a comunicação é feita pelos verbos http
+</p>
 
 # Link para heroku
+Obs: isso é um link para uma api, ao entrar nele vera um erro, porem esplico como usar abaixo<br>
 <p>https://yk-javasb.herokuapp.com/</p>
 
 # Como usar
