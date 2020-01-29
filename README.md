@@ -6,7 +6,7 @@
 <p>https://yk-javasb.herokuapp.com/</p>
 
 # Como usar
-<p>POST:</p>
+## POST
 <p>users/ -> recebe um json para criar usuario</p>
 <p>{</p>
 <p> "name": "Bob Brown",</p>
@@ -16,21 +16,21 @@
 <p>}
 <br><br>
   
-<p>GET:</p>
+## GET:
 <p>users/ -> retorna todos os usuarios</p>
 <p>users/1 -> retorna o usuario com id 1</p>
 <br><br>
 
-<p>DELETE:</p>
+## DELETE
 <p>users/1 -> Deleta o usuario com id 1</p>
 <br><br>
 
-<p>PUT: </p>
+## PUT
 <p>users/1 -> Modifica o usuario com id 1</p>
 <p>{</p>
-<p><t>"name": "outro nome",</p>
-<p><t>"email": "outro email",</p>
-<p><t>"password": "outra senha",</p>
-<p><t>"phone": "outro telefone"</p>
+<p>"name": "outro nome",</p>
+<p>"email": "outro email",</p>
+<p>"password": "outra senha",</p>
+<p>"phone": "outro telefone"</p>
 <p>}
 
