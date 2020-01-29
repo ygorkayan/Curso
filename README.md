@@ -26,10 +26,11 @@
 <br><br>
 
 <p>PUT: </p>
-<p>users/1 -> Modifica o usuario com id 1, so permiti a att de Nome, email e Phone</p>
+<p>users/1 -> Modifica o usuario com id 1</p>
 <p>{</p>
-<p> "name": "Outro nome",</p>
-<p> "email": "Outro email",</p>
-<p> "phone": "Outro numero"</p>
+<p><t>"name": "outro nome",</p>
+<p><t>"email": "outro email",</p>
+<p><t>"password": "outra senha",</p>
+<p><t>"phone": "outro telefone"</p>
 <p>}
 
