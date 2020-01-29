@@ -5,7 +5,9 @@ por ser uma API, a comunicação é feita pelos verbos http
 </p>
 
 # Link para heroku
-Obs: isso é um link para uma api, ao entrar nele vera um erro, porem esplico como usar abaixo<br>
+Obs: isso é um link para uma api, ao entrar nele verá um erro, porém explico como usar abaixo<br>
+e por se tratar de uma hospedagem gratuita e fica nos Estados unidos, é um pouco lenta<br>
+<br>
 <p>https://yk-javasb.herokuapp.com/</p>
 
 # Como usar
