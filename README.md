@@ -7,7 +7,7 @@
 
 # Como usar
 ## POST
-<p>users/ -> recebe um json para criar usuario</p>
+<p>usuario/ -> recebe um json para criar usuario</p>
 <p>{</p>
 <p> "name": "Bob Brown",</p>
 <p> "email": "bob@gmail.com",</p>
@@ -17,16 +17,16 @@
 <br><br>
   
 ## GET:
-<p>users/ -> retorna todos os usuarios</p>
-<p>users/1 -> retorna o usuario com id 1</p>
+<p>usuario/ -> retorna todos os usuarios</p>
+<p>usuario/1 -> retorna o usuario com id 1</p>
 <br><br>
 
 ## DELETE
-<p>users/1 -> Deleta o usuario com id 1</p>
+<p>usuario/1 -> Deleta o usuario com id 1</p>
 <br><br>
 
 ## PUT
-<p>users/1 -> Modifica o usuario com id 1</p>
+<p>usuario/1 -> Modifica o usuario com id 1</p>
 <p>{</p>
 <p>"name": "outro nome",</p>
 <p>"email": "outro email",</p>
