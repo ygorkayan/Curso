@@ -11,7 +11,7 @@ public class index {
     @RequestMapping("/")
     @ResponseBody
     public String index() {
-        return "<h1>So uma lasanha agora em :)</h1>";
+        return this.msg();
     }
 
     private String msg() {
